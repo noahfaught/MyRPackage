@@ -1,3 +1,17 @@
+#' @title Iteration Barplot
+#'
+#' @param iter "description"
+#' @param n "description"
+#' @param p "description"
+#'
+#' @importFrom grDevices rainbow
+#' @importFrom graphics barplot
+#'
+#' @return A sophisticated barplot
+#'
+#' @examples
+#' \dontrun{bin100 = mybin(iter = 100, n = 10, p = 0.7)}
+#' @export
 mybin = function(iter = 1000, n = 10, p = 0.5) {
   # make a matrix to hpld the samples initially filled with NA's
   sam.mat = matrix(NA, nrow = n, ncol = iter, byrow = TRUE)
